@@ -37,7 +37,9 @@ export HBASE_DISABLE_HADOOP_CLASSPATH_LOOKUP="true"
 ```
 
 1.JAVA_HOME是JDK的目录所在，不多做解释；
+
 2.HBASE_MANAGES_ZK设置为true表示使用HBase自带的zookeeper，如果单独安装了zookeeper，那么将其设置为false即可；
+
 3.最后一项的意义是让HBase不要扫描Hadoop的library，因为HBase的某些jar包与Hadoop的jar包存在冲突，加上这一项可以避免报错和警告。
 
 **配置 hbase-site.xml（伪分布式）**
