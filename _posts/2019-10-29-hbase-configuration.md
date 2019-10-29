@@ -26,41 +26,40 @@ $ mv hbase-2.2.1 hbase
 ### 二、配置HBase
 
 1. 使用HBase的前提是JDK1.8，没错就是1.8，其他版本的JDK或多或少都有问题，请慎用，确保你的电脑已经下载了JDK并配置好了环境变量
-
 2. 需要配置的地方有两个，一个是conf目录下的`hbase-site.xml`,另一个是`hbase-env.sh`
 
-    ##### 配置 hbase-env.sh
+**配置 hbase-env.sh**
 
-    ```shell
-    export JAVA_HOME=/usr/local/jdk1.8.0_221
-    export HBASE_MANAGES_ZK=true
-    export HBASE_DISABLE_HADOOP_CLASSPATH_LOOKUP="true"
-    ```
+```shell
+export JAVA_HOME=/usr/local/jdk1.8.0_221
+export HBASE_MANAGES_ZK=true
+export HBASE_DISABLE_HADOOP_CLASSPATH_LOOKUP="true"
+```
 
-    > 1.JAVA_HOME是JDK的目录所在，不多做解释；
-    > 2.HBASE_MANAGES_ZK设置为true表示使用HBase自带的zookeeper，如果单独安装了zookeeper，那么将其设置为false即可；
-    > 3.最后一项的意义是让HBase不要扫描Hadoop的library，因为HBase的某些jar包与Hadoop的jar包存在冲突，加上这一项可以避免报错和警告。
+1.JAVA_HOME是JDK的目录所在，不多做解释；
+2.HBASE_MANAGES_ZK设置为true表示使用HBase自带的zookeeper，如果单独安装了zookeeper，那么将其设置为false即可；
+3.最后一项的意义是让HBase不要扫描Hadoop的library，因为HBase的某些jar包与Hadoop的jar包存在冲突，加上这一项可以避免报错和警告。
 
-    ##### 配置 hbase-site.xml（伪分布式）
+**配置 hbase-site.xml（伪分布式）**
 
-    ```xml
-    <configuration>
-        <property>
-            <name>hbase.rootdir</name>
-            <value>hdfs://localhost:9000/hbase</value>
-        </property>
-        <property>
-            <name>hbase.cluster.distributed</name>
-            <value>true</value>
-        </property>
-    </configuration>
-    ```
+```xml
+<configuration>
+    <property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://localhost:9000/hbase</value>
+    </property>
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+    </property>
+</configuration>
+```
 
-    >注意：端口号要和你的Hadoop配置的HDFS端口号一致，我这里是9000
+> 注意：端口号要和你的Hadoop配置的HDFS端口号一致，我这里是9000
 
 3. 配置HBase环境变量(可选)
 
-> 我使用的是ubuntu，其他Linux发行版请按照相应的配置文件进行配置。
+我使用的是ubuntu，其他Linux发行版请按照相应的配置文件进行配置。
 
 ```shell
 $ vim ~/.bashrc
