@@ -25,7 +25,7 @@ $ mv hbase-2.2.1 hbase
 
 ### 二、配置HBase
 
-##### 修改配置文件
+#### 修改配置文件
 
 使用HBase的前提是JDK1.8，没错就是1.8，其他版本的JDK或多或少都有问题，请慎用，确保你的电脑已经下载了JDK并配置好了环境变量。
 
@@ -62,7 +62,7 @@ export HBASE_DISABLE_HADOOP_CLASSPATH_LOOKUP="true"
 
 > 注意：端口号要和你的Hadoop配置的HDFS端口号一致，我这里是9000
 
-##### 配置HBase环境变量(可选)
+#### 配置HBase环境变量(可选)
 
 我使用的是ubuntu，其他Linux发行版请按照相应的配置文件进行配置。
 
@@ -73,7 +73,7 @@ $ vim ~/.bashrc
 export PATH=$PATH:/usr/local/hbase/bin
 ```
 
-##### 启动HBase
+#### 启动HBase
 
 ```shell
 $ start-dfs.sh && start-hbase.sh
@@ -85,7 +85,7 @@ running master, logging to /usr/local/hbase/logs/hbase-hadoop-master-aabbcczhy-I
 : running regionserver, logging to /usr/local/hbase/logs/hbase-hadoop-regionserver-aabbcczhy-Inspiron-5576.out
 ```
 
-##### 使用hbase shell测试
+#### 使用hbase shell测试
 
 ```shell
 $ hbase shell
