@@ -98,7 +98,15 @@ description: Downwards is the only way forwards.
         {% endif %}
 
     </aside>
-
+    <div id="comments"></div>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script>
+        new Valine({
+            el: '#comments',
+            appId: 'yCMTr5r4Ap1F7GAXTcnRgftj-gzGzoHsz',
+            appKey: 'jVITecTp3wIc7n1s5llGulmX'
+        })
+    </script>
 </main>
 
 {% include footer.html %}
