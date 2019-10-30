@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: 'aabbcczhy'
-description: 'aabbcczhy,热爱生活，热爱代码，很高兴能在这里与你分享我对技术和生活的思考。'
-keyword: 'aabbcczhy, aabbcczhy的博客, web, 大数据, android'
+description: 'aabbcczhy的个人博客，热爱生活，热爱代码，很高兴能在这里与你分享我对技术和生活的思考。'
+keyword: 'aabbcczhy, 博客, aabbcczhy的个人博客, web, 大数据, Android'
 url: '' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -33,7 +33,7 @@ avatar: '/assets/img/profile.jpg'
 search: true
 
 # Night mode
-nightMode: true
+nightMode: false
 
 # Comments 评论功能
 comments:
