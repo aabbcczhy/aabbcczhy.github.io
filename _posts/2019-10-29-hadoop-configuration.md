@@ -4,6 +4,7 @@ title: Hadoop的安装与配置
 date: 2019-10-29
 author: aabbcczhy
 categories: 大数据
+cover: '/assets/img/hadoop-logo.jpg'
 tags: Hadoop 大数据
 ---
 

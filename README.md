@@ -1,26 +1,12 @@
-## jekyll-theme-H2O
+## aabbcczhy的个人博客
 
-基于Jekyll的博客主题模板，简洁轻量。
-
-另外，还有此主题的[Ghost版本](https://github.com/eastpiger/ghost-theme-H2O) by [eastpiger](https://github.com/eastpiger)
+基于Jekyll的主题搭建的博客网站，简洁轻量。
 
 ### Preview
 
-#### [在线预览 Live Demo →](http://liaokeyu.com/)
+#### [网站预览 →](https://www.aabbcczhy.cn/)
 
-![](screenshot/jekyll-theme-h2o-realhome.jpg)
-
-![](screenshot/jekyll-theme-h2o-realm.png)
-
-如果你喜欢这个博客模板，请在右上角star一下，非常感谢～
-
-If you like this theme or using it, please give a ⭐️ for motivation ;)
-
-如果想体验手机浏览效果，可以扫一下二维码：
-
-![](screenshot/1494404591.png)
-
-Using your smartphone to scan the QR Code
+![](screenshot/jekyll-theme-h2o-realhome.png)
 
 ### Features 特性
 
@@ -52,24 +38,6 @@ Using your smartphone to scan the QR Code
 - Search
 - Copyright text on copy event
 
-### Usage 快速开始
-
-首先你需要安装Jekyll，请查看文档: [快速指南](http://jekyll.com.cn/docs/quickstart/)
-
-如果你已经安装了Jekyll，请检查版本是否为3.0.x，你可以使用 ```gem update jekyll``` 命令进行升级。
-
-使用 ```gem install jekyll-paginate``` 或 ```sudo gem install jekyll-paginate``` 安装Jekyll的分页插件。
-
-> H2O主题基于Jekyll 3.2.1版本，不同版本之间可能存在部分差异，具体请参考[官方更新文档](https://jekyllrb.com/news/)
-
-点击右上角Fork按钮在你的Github上创建分支，或者```clone```到本地。
-
-``` git clone https://github.com/kaeyleo/jekyll-theme-H2O.git ```
-
-最后，在命令行输入 ```jekyll server``` 开启服务，就能在本地预览主题了。
-
-如果需要部署到线上环境，请参照配置文档的 **开始** 章节进行操作。
-
 ### Document 配置文档
 
 #### CN
@@ -92,8 +60,8 @@ Using your smartphone to scan the QR Code
 - 高级部分
 	- [自定义](#自定义)
 - 集成服务
-	- [Disqus](#disqus)
-	- [Share.js](#sharejs)
+	- [Disqus](#Use Valine Instead Of Disqus)
+	- [Share.js](#share.js)
 
 #### EN
 
@@ -115,7 +83,7 @@ Using your smartphone to scan the QR Code
 - Advanced
 	- [Customization](#自定义)
 - Plugins
-	- [Disqus](#Disqus)
+	- [Disqus](#Use Valine Instead Of Disqus)
 	- [Share.js](#Share.js)
 
 
@@ -127,10 +95,10 @@ You can easily get started by modifying _config.yml
 
 ```
 # Site settings
-title: '廖柯宇的独立博客' # 你的博客网站标题
-description: '很高兴能在这里与你分享我对技术和生活的思考。' # 站点描述
-keyword: '廖柯宇, 廖柯宇的独立博客, 前端, 设计' # 网站关键词
-url: 'http://liaokeyu.com' # 站点url
+title: 'aabbcczhy'
+description: 'aabbcczhy的个人博客，热爱生活，热爱代码，很高兴能在这里与你分享我对技术和生活的思考。'
+keyword: 'aabbcczhy, 博客, aabbcczhy的个人博客, web, 大数据, Android'
+url: 'https://www.aabbcczhy.cn'
 baseurl: ''
 
 # Build settings
@@ -147,12 +115,13 @@ paginate_path: 'page:num'
 ```
 ---
 layout: post
-title: 'H2O theme for Jekyll'
-subtitle: '或许是最漂亮的Jekyll主题'
-date: 2017-04-18
+title: 博客的搭建与建站心得
+subtitle: 关于如何搭建本博客的一些心得体会
+date: 2019-10-30
+author: aabbcczhy
 categories: 技术
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
-tags: jekyll 前端开发 设计
+cover: ''
+tags: 博客 网站搭建
 ---
 ```
 
@@ -191,10 +160,9 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 ```
 # SNS settings 配置社交网站url
 sns:
-  weibo: '//weibo.com/lovecolcol'
-  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-  instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/kaeyleo'
+  weibo: '//weibo.com/5241225886'
+  zhihu: '//zhihu.com/people/aabbcczhy-70'
+  github: '//github.com/aabbcczhy'
 ```
 
 sns属性可选参数：
@@ -224,10 +192,10 @@ VK | `vk`
 
 ```
 # Author 配置博主信息
-author: 'Jack'
-nickname: 'xx'
-bio: '程序员'
-avatar: 'assets/img/avatar.jpg'
+author: '张煌毅'
+nickname: 'aabbcczhy'
+bio: '热爱生活，热爱代码，很高兴能在这里与你分享我对技术和生活的思考'
+avatar: '/assets/img/profile.jpg'
 ```
 
 #### 标签
@@ -238,7 +206,6 @@ avatar: 'assets/img/avatar.jpg'
 # Tags
 recommend-tags: true
 recommend-condition-size: 12
-
 ```
 
 Tags配置说明：
@@ -271,8 +238,6 @@ search: true
 模板引入了[Prism.js](http://prismjs.com)，一款轻量、可扩展的代码语法高亮库。
 
 很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，就连 JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
-
-![代码高亮](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-highlight.png)
 
 遵循 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-pre-element) 标准，Prism 使用语义化的 `<pre>` 元素和 `<code>` 元素来标记代码区块：
 
@@ -317,8 +282,6 @@ nightMode: true
 
 #### 主题皮肤
 
-![](screenshot/jekyll-theme-h2o-themecolor.jpg)
-
 支持两种主题颜色蓝色（默认）和粉色
 
 主要效果体现在首页博客封面、顶部导航栏的logo以及鼠标悬停时文字显示的颜色效果。
@@ -338,8 +301,8 @@ theme-color: 'default' # pink or default
 ```
 ---
 layout: default
-home-title: Steven的博客
-description: 开发者，创造者
+home-title: aabbcczhy的个人博客
+description: Downwards is the only way forwards.
 header-img: assets/img/banner.jpg
 ---
 ```
@@ -412,20 +375,32 @@ postPatterns: 'circuitBoard'
 
 值得注意的是，css及js的源码都在 `dev` 文件夹中，每一次保存 gulp 都会对它们进行处理并保存到 `assets` 文件夹以供 `_site` 上线环境使用。
 
-#### Disqus
+#### Use Valine Instead Of Disqus
 
-[Disqus](https://disqus.com/)是一个第三方社交评论插件，体验相当不错。
+原版作者采用了Disqus作为评论插件，但是Disqus在国内访问速度很慢或者甚至不能访问，这里我引入的是开源框架Valine作为评论插件。
 
-在配置文件 `_config.yml` 中找到comments的相关配置，设置 `disqus` 参数为 `true` 打开评论功能（ `false` 为关闭），并且设置 `disqus_url`。
+![](screenshot/jekyll-theme-h2o-valine.png)
 
+首先在配置文件 `_config.yml` 中找到comments的相关配置，设置 `disqus` 参数为 `false` 
+
+然后在`index.html`底部找到以下代码，修改相应的APPID和APPKEY即可（关于如何获取，请参考[Valine官方文档](https://valine.js.org/quickstart.html)）
+
+```html
+<div id="comments"></div>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comments',
+        appId: '<你自己的APPID>',
+        appKey: '<你自己的APPKEY>'
+        placeholder: '欢迎留言交流...',
+        meta: ['nick'],
+        avatar: 'hide'
+    })
+</script>
 ```
-# Comments
-comments:
-	disqus: true
-	disqus_url: 'https://your-disqus-username.disqus.com/embed.js'
-```
 
-注：`disqus` 默认值为 `false`
+更多配置请参考[Valine官方文档](https://valine.js.org)。
 
 #### Share.js
 
@@ -437,18 +412,9 @@ social-share: true # 开启或者关闭分享功能
 social-share-items: ['wechat', 'weibo', 'douban','twitter']
 ```
 
-### Contribution 贡献
+### 鸣谢
 
-Any types of contribution are welcome. Thanks.
-
-接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的 ```Pull Request```
-
-#### 感谢参与代码贡献的伙伴
-
-- [Ray-Eldath](https://github.com/Ray-Eldath)
-- [sctop](https://github.com/sctop)
-- [bananaappletw](https://github.com/bananaappletw)
-- [moycat](https://github.com/moycat)
+感谢制作该Jekyll主题的作者廖柯宇，[原版github地址](https://github.com/kaeyleo/jekyll-theme-H2O.git)
 
 ### License 许可证
 
