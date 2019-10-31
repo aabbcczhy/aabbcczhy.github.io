@@ -4,7 +4,6 @@ title: HBase的安装与配置
 date: 2019-10-29
 author: aabbcczhy
 categories: 大数据
-cover: '/assets/img/hbase_logo_with_orca_large.png'
 tags: HBase 大数据
 ---
 ## HBase的安装与配置
