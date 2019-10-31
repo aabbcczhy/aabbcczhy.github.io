@@ -60,7 +60,7 @@
 - 高级部分
 	- [自定义](#自定义)
 - 集成服务
-	- [Disqus](#Use Valine Instead Of Disqus)
+	- [Disqus](#use-valine-instead-of-disqus)
 	- [Share.js](#share.js)
 
 #### EN
@@ -83,7 +83,7 @@
 - Advanced
 	- [Customization](#自定义)
 - Plugins
-	- [Disqus](#Use Valine Instead Of Disqus)
+	- [Disqus](#use-valine-instead-of-disqus)
 	- [Share.js](#Share.js)
 
 
