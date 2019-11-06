@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HBase的安装与配置
+subtitle: HBase的安装过程和伪分布式的配置方法
 date: 2019-10-29
 author: aabbcczhy
 categories: 大数据

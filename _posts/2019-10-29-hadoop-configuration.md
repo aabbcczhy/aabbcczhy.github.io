@@ -2,7 +2,7 @@
 layout: post
 title: Hadoop的安装与配置
 date: 2019-10-29
-author: aabbcczhy
+author: Hadoop的安装过程和伪分布式的配置方法
 categories: 大数据
 tags: Hadoop 大数据
 ---

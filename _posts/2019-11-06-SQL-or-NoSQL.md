@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL还是NoSQL
-subtitle: 近来阅读《大数据时代》，感慨Google一天要接受大约30亿条的搜索指令...
+subtitle: 面对海量数据，关系型数据库还能顶得住吗？
 date: 2019-11-06
 author: aabbcczhy
 categories: 数据库
